@@ -6,7 +6,10 @@ const app = express()
 app.set('view engine', 'hbs')
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', {
+        title: 'Saint Tropez',
+        body: 'Bodybuilder'
+    })
 })
 
 app.get('/kontakt', (req, res) => {
