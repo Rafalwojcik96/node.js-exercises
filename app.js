@@ -1,1 +1,3 @@
-console.log("First test")
+const utils = require("./utils")
+utils.greeting()
+utils.add(4, 5)
